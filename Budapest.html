@@ -1,0 +1,100 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budapest Travel Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+        .image-grid img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .maps {
+            margin: 20px 0;
+        }
+        .maps iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+        .attractions {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .attractions li {
+            margin-bottom: 10px;
+        }
+        .attractions li::before {
+            content: "\2022";
+            font-weight: bold;
+            display: inline-block;
+            width: 20px;
+            margin-left: -20px;
+        }
+        @media only screen and (max-width: 600px) {
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media only screen and (max-width: 400px) {
+            .image-grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Budapest Travel Guide</h1>
+    </header>
+    <div class="container">
+        <h2>Introduction to Budapest</h2>
+        <p>Budapest, the capital city of Hungary, is a must-visit destination for any traveler. With its rich history, stunning architecture, and vibrant cultural scene, Budapest has something to offer for everyone.</p>
+        <div class="image-grid">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Parliament_Budapest_Hungary.jpg/800px-Parliament_Budapest_Hungary.jpg" alt="Parliament Building">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Sz%C3%A9chenyi_thermal_bath.jpg/800px-Sz%C3%A9chenyi_thermal_bath.jpg" alt="Széchenyi Thermal Bath">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Buda_Castle_2020.jpg/800px-Buda_Castle_2020.jpg" alt="Buda Castle">
+        </div>
+        <div class="maps">
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=19.0400390625%2C47.483421875%2C19.083984375%2C47.522578125&layer=mapnik" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <h2>Local Attractions</h2>
+        <ul class="attractions">
+            <li>Buda Castle: A historic castle complex that offers stunning views of the city</li>
+            <li>Széchenyi Thermal Bath: One of the largest and most popular thermal baths in Europe</li>
+            <li>St. Stephen's Basilica: A beautiful basilica that offers panoramic views of the city from its dome</li>
+            <li>Chain Bridge: A iconic bridge that connects the two parts of the city</li>
+            <li>Andrassy Avenue: A UNESCO World Heritage Site that features stunning architecture and beautiful parks</li>
+        </ul>
+    </div>
+</body>
+</html>
+```
