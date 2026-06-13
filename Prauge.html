@@ -1,0 +1,103 @@
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prague Travel Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .image-grid img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .map {
+            margin: 20px 0;
+        }
+        .attractions {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .attractions li {
+            margin-bottom: 10px;
+        }
+        .attractions li h2 {
+            margin-top: 0;
+        }
+        @media only screen and (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Prague Travel Guide</h1>
+        </div>
+        <div class="image-grid">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Prague_Old_Town_Square.jpg/1024px-Prague_Old_Town_Square.jpg" alt="Prague Old Town Square">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Charles_Bridge_at_sunset_%282020%29.jpg/1024px-Charles_Bridge_at_sunset_%282020%29.jpg" alt="Charles Bridge at sunset">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Prague_Castle_2020.jpg/1024px-Prague_Castle_2020.jpg" alt="Prague Castle">
+        </div>
+        <div class="map">
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=14.3919%2C50.0755%2C14.4419%2C50.1055&layer=mapnik" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <h2>Local Attractions</h2>
+        <ul class="attractions">
+            <li>
+                <h2>Old Town Square</h2>
+                <p>Historic square with famous landmarks like the Astronomical Clock and St. Nicholas Church</p>
+            </li>
+            <li>
+                <h2>Charles Bridge</h2>
+                <p>Medieval stone bridge lined with statues and offering stunning views of the Vltava River</p>
+            </li>
+            <li>
+                <h2>Prague Castle</h2>
+                <p>Large castle complex with stunning architecture, gardens, and museums</p>
+            </li>
+            <li>
+                <h2>Petrin Tower</h2>
+                <p>60-meter-tall steel tower with panoramic views of the city</p>
+            </li>
+            <li>
+                <h2>Wenceslas Square</h2>
+                <p>Large public square with shopping, dining, and entertainment options</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+```
