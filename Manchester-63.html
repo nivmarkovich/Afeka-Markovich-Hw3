@@ -1,0 +1,99 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester Travel Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+        .image-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .map {
+            margin: 20px 0;
+        }
+        .attractions {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .attractions li {
+            margin-bottom: 20px;
+        }
+        .attractions li h2 {
+            margin-top: 0;
+        }
+        @media only screen and (max-width: 768px) {
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Manchester Travel Guide</h1>
+        </div>
+        <div class="image-grid">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Manchester_Town_Hall_%282016%29.jpg/320px-Manchester_Town_Hall_%282016%29.jpg" alt="Manchester Town Hall">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Lowry_%282016%29.jpg/320px-Lowry_%282016%29.jpg" alt="The Lowry">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/National_Football_Museum_%282018%29.jpg/320px-National_Football_Museum_%282018%29.jpg" alt="National Football Museum">
+        </div>
+        <div class="map">
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-2.2431650390625%2C53.47595691699219%2C-2.230712890625%2C53.48992919921875&layer=mapnik" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <ul class="attractions">
+            <li>
+                <h2>National Football Museum</h2>
+                <p>Learn about the history of football and its impact on British culture.</p>
+            </li>
+            <li>
+                <h2>The Lowry</h2>
+                <p>A theatre and gallery complex that hosts a variety of performances and exhibitions.</p>
+            </li>
+            <li>
+                <h2>Manchester Museum</h2>
+                <p>Explore the natural history and culture of Manchester and the world.</p>
+            </li>
+            <li>
+                <h2>John Rylands Library</h2>
+                <p>A stunning Victorian-era library that is now part of the University of Manchester.</p>
+            </li>
+            <li>
+                <h2>Castlefield</h2>
+                <p>A charming canal-side area with historic warehouses, bars, and restaurants.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+```
