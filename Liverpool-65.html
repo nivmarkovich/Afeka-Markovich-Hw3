@@ -1,0 +1,100 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool Travel Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+        }
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin: 1em 0;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            margin: 1em 0;
+        }
+        .attractions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .attraction {
+            background-color: #fff;
+            padding: 1em;
+            margin: 1em;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: calc(33.33% - 2em);
+        }
+        @media only screen and (max-width: 768px) {
+            .attraction {
+                width: calc(50% - 2em);
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            .attraction {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Liverpool Travel Guide</h1>
+    </header>
+    <main>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Liverpool_City_Hall.jpg/1024px-Liverpool_City_Hall.jpg" alt="Liverpool City Hall">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Liverpool_Cathedral_from_the_tower_of_the_Town_Hall.jpg/1024px-Liverpool_Cathedral_from_the_tower_of_the_Town_Hall.jpg" alt="Liverpool Cathedral">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Liverpool_Museum.jpg/1024px-Liverpool_Museum.jpg" alt="Liverpool Museum">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-3.0183150253295898%2C53.39611650976545%2C-2.961414634704589%2C53.42541796875&layer=mapnik&marker=53.40835555000001%2C-2.9898598350000004" frameborder="0" allowfullscreen></iframe>
+        <h2>Local Attractions</h2>
+        <div class="attractions">
+            <div class="attraction">
+                <h3>Anfield Stadium</h3>
+                <p>Home of Liverpool FC, one of the most famous football clubs in the world.</p>
+            </div>
+            <div class="attraction">
+                <h3>Albert Dock</h3>
+                <p>A historic docking complex turned into a popular tourist attraction, featuring museums, galleries, and restaurants.</p>
+            </div>
+            <div class="attraction">
+                <h3>Liverpool Cathedral</h3>
+                <p>A stunning Anglican cathedral with impressive architecture and beautiful views of the city.</p>
+            </div>
+            <div class="attraction">
+                <h3>World Museum</h3>
+                <p>A museum featuring a vast collection of artifacts and exhibits from around the world, including Egyptian mummies and dinosaur fossils.</p>
+            </div>
+            <div class="attraction">
+                <h3>Tate Liverpool</h3>
+                <p>A modern art museum located in the Albert Dock, featuring an impressive collection of contemporary art.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+```
